@@ -66,18 +66,19 @@
             <div class="income-box box">
                 <div class="income-box-header">
                  <h3>Income</h3>
-                 <div id="income-progress-bar"class="progress-bar"></div>
+                 <div class="progress-bar">
+                    <div class="progress"></div>
+                 </div>
             </div>
-                <ul class="income-input">
-                    <li>week<span>$500</span></li>
-                    <li class="add-item">Add item
-                        <span class="material-symbols-outlined">
-                        edit
-                        </span>
-                    </li>
-                </ul>
+                <ul class="income-input"></ul>
+                <div class="input">
+                    <input type="text" id="income-title-input" name="title" placeholder="add income">
+                    <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+                    <div class="add-income"><img class="add-item-button" src="images/add_FILL0_wght400_GRAD0_opsz48.svg" alt="add icon"></div>
+                </div>
 
-                <h3>Total <span>$2,500</span></h3>
+                <div class="total-income"><h3>Total <span id="total-current-income">$0</span></h3></div>
+                
                 
             </div>
             <!-- maybe use section instead of div for income, savings, deductions... -->
