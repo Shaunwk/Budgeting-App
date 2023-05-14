@@ -61,9 +61,15 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color:#000;
-  line-height: 2rem;
-  
+
+/* REMOVE SPINNERS FROM NUMBER INPUT */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
 }

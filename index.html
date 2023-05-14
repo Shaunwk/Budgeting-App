@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Budgeting App</title>
 
     <!--Stylesheets-->
@@ -20,100 +20,87 @@
         rel="stylesheet">
 
     <!-- Google Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
 
 <body>
+    <!--add toggle for links on top left when in mobile size
+             have a stationary bar with icons for desktop on left side -->
+    <nav>
+        <div class="toggle">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
 
-    <div class="app-container">
+            <ul class="links-list" style="display: none;">
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Note pad</a></li>
+                <li><a href="#">Calculator</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-                <!--add toggle for links on top left when in mobile size
-          have a stationary bar with icons for desktop on left side -->
-          
-                <div class="toggle">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                    
-                    <ul class="links-list" style="display: none;">
-                        <li><a href="#">Budget</a></li>
-                        <li><a href="#">Note pad</a></li>
-                        <li><a href="#">Calculator</a></li>
-                    </ul>
+    <header>
+        <!-- Have pencil so you can enter the month and year
+            this might stays at the top even on scroll so not too big -->
+        <div class="date-box">
+            <input type="text" id="date" name="date" placeholder="Month/Year">
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Planned Income box -->
+        <div class="box">
+            <div class="d-flex">
+                <h2 class="box-title">Planned Income</h2>
+                <input type="number" id="planned-amount-input" name="amount" placeholder="$0">
+            </div>
+        </div>
+        <!-- 2. Income Progress box -->
+        <div class="box">
+            <div class="d-flex">
+                <h3 class="box-title">Income</h3>
+                <div class="progress-bars-outline">
+                    <div id="income-progress"></div>
                 </div>
-            </nav>
-        <header>
-            
-
-            <div class="header-date">
-                <h1 class="month-year">MAY 2023</h1>
-                <!-- add budget month and year section. 
-            Have pencil so you can enter the month and year -->
-                <!-- this might stays at the top even on scroll so not too big -->
             </div>
 
-            <!-- <div class="header-right"></div> -->
-        </header>
-
-        <main>
-
-            <div class="planned-income box">
-                <h2>Planned Income</h2>
-                <p class="planned-income__total">$5,000</p>
+            <div class="d-flex">
+                <ul class="income-list"></ul>
             </div>
-            <div class="income-box box">
-                <div class="income-box-header">
-                 <h3>Income</h3>
-                 <div class="progress-bar">
-                    <div class="progress"></div>
-                 </div>
+
+            <div class="d-flex">
+                <input type="text" id="income-title-input" name="title" placeholder="add income">
+                <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+                <img class="income-add-button" src="images/add_FILL0_wght400_GRAD0_opsz48.svg" alt="add icon">
+
             </div>
-                <ul class="income-input"></ul>
-                <div class="input">
-                    <input type="text" id="income-title-input" name="title" placeholder="add income">
-                    <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                    <div class="add-income"><img class="add-item-button" src="images/add_FILL0_wght400_GRAD0_opsz48.svg" alt="add icon"></div>
+
+            <div class="d-flex">
+                <h3 class="box-title">Total</h3>
+                <div class="income-amount-total">
+                    $0.00
                 </div>
+            </div>
+        </div>
 
-                <div class="total-income"><h3>Total <span id="total-current-income">$0</span></h3></div>
-                
-                
-            </div>
-            <!-- maybe use section instead of div for income, savings, deductions... -->
-            <!-- Income section -->
-            <div>
-                <!-- Planned income - have pencil icon to enter $ -->
-            </div>
-            <div>
-                <!-- Income tracker - Have a section to add income with the name and amount 
-             In this section it shows all income entries and a total
-             Also have a bar that shows progress towards the planned income-->
-            </div>
-            <div>
-                <!-- Savings goal - user types in $ and it also displays 
+
+        <!-- Savings goal - user types in $ and it also displays 
             a % based on planned income so they can see their savings rate-->
-            </div>
-            <div>
-                <!-- savings entries with progress bar and a running total-->
-            </div>
-            <div>
-                <!-- Deductions - seperate into several catergories like 
-            housing, utilities, misc, insurance, debt... make them renameable-->
-            </div>
 
-        </main>
+        <!-- savings entries with progress bar and a running total-->
 
-        <aside>
-            <!-- desktop version gets the section on the right -->
-        </aside>
+        <!-- Deductions - seperate into several catergories like 
+                 housing, utilities, misc, insurance, debt...-->
 
-    </div>
 
-    <footer>
-        <!--add images that link to main sections of the app-->
-    </footer>
+    </main>
+
+    <aside>
+        <!-- desktop version gets the section on the right -->
+    </aside>
 
 
     <!--Script-->
