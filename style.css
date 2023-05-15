@@ -38,6 +38,10 @@ input {
     overflow: hidden;   
 }
 
+ul {
+    list-style-type: none;
+  }
+
 
 
 /* navigation */
@@ -114,15 +118,20 @@ main {
     background-color: #2fda00;
 }
 
-.income-add-button {
+#income-add-button {
     height: 30px;
     cursor: pointer;
 }
 
-.income-amount-total {
+#income-amount-total {
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+#income-list {
+    background-color: var(--very-light-grey);
+}
+
 
 /* 3. Savings Goal box */
 

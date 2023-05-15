@@ -22,6 +22,7 @@
     <!-- Google Material Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   
 
 </head>
 
@@ -68,20 +69,20 @@
             </div>
 
             <div class="d-flex">
-                <ul class="income-list"></ul>
+                <ul id="income-list"></ul>
             </div>
 
             <div class="d-flex">
                 <input type="text" id="income-title-input" name="title" placeholder="add income">
                 <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                <img class="income-add-button" src="images/add_FILL0_wght400_GRAD0_opsz48.svg" alt="add icon">
-
+                <!-- <img id="income-add-button" src="images/add_FILL0_wght400_GRAD0_opsz48.svg" alt="add icon"> -->
+                <button id="income-add-button">Submit</button>
             </div>
 
             <div class="d-flex">
-                <h3 class="box-title">Total</h3>
-                <div class="income-amount-total">
-                    $0.00
+                <!-- <h3 class="box-title"></h3> -->
+                <div id="income-amount-total">
+                    Total: $0.00
                 </div>
             </div>
         </div>
@@ -102,9 +103,9 @@
         <!-- desktop version gets the section on the right -->
     </aside>
 
-
-    <!--Script-->
-    <script src="script.js"></script>
+<!--Script-->
+<script src="script.js"></script>
+    
 </body>
 
 </html>
