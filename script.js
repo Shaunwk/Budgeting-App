@@ -4,17 +4,12 @@ const linksList = document.querySelector('.links-list');
 const toggleIcon = document.querySelector('.material-symbols-outlined');
 
 
-toggle.addEventListener('click', function () {
-  if (linksList.style.display === 'none') {
-    linksList.style.display = 'block';
-    toggle.style.backgroundColor = '#fff';
-    toggleIcon.style.color = "#000";
-  } else {
-    linksList.style.display = 'none';
-    toggle.style.backgroundColor = '#212121';
-    toggleIcon.style.color = "#fff";
-  }
+toggle.addEventListener('click', function (){
+  linksList.classList.toggle('links-open');
+  toggleIcon.classList.toggle('icon-open');
+  toggle.classList.toggle('toggle-open');
 });
+
 
 
 
