@@ -6,8 +6,8 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-1. [Progress 1](#progress-1)
-2. [Progress 2](#progress-2)
+1. [Progress 5/17/2023](#progress-2) 
+2. [Progress 5/16/2023](#progress-1)
 
 ### Progress 2 
 5/17/2023
