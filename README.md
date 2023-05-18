@@ -6,10 +6,11 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-# progress-5162023-1
-# progress-5172023
+[Progress 1](#progress-1)
+[Progress 2](#progress-2)
 
-### Progress-5/17/2023
+### Progress 2 
+5/17/2023
 
 Updated the JS to have a toggle instead of a if/else statment for the links toggle. 
 
@@ -18,7 +19,8 @@ I also updated the CSS to have the new classes created and implemented a keyfram
 In the HTML I deleted the inline style of display:none and put it in the CSS instead. 
 
 
-### Progress-5/16/2023
+### Progress 1
+5/16/2023
 
 Created a reset.css file to have all the resets like "box-sizing: border-box" and much more. 
 
