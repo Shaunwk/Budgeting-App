@@ -5,7 +5,21 @@ Start date 5/11/2023
 Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
-progress update 5/16/2023
+Progress 
+[Update-1](progress-5/16/2023)
+[Update-2](progress-5/17/2023)
+# Progress-5/16/2023
+
+### Progress-5/17/2023
+
+Updated the JS to have a toggle instead of a if/else statment for the links toggle. 
+
+I also updated the CSS to have the new classes created and implemented a keyframe with opacity changes. I applied that animation to the links-list.
+
+In the HTML I deleted the inline style of display:none and put it in the CSS instead. 
+
+
+### Progress-5/16/2023
 
 Created a reset.css file to have all the resets like "box-sizing: border-box" and much more. 
 
