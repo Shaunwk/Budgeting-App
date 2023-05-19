@@ -6,8 +6,18 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-1. [Progress 5/17/2023](#progress-2) 
-2. [Progress 5/16/2023](#progress-1)
+1. [Progress 5/19/2023](#progress-3)
+2. [Progress 5/17/2023](#progress-2) 
+3. [Progress 5/16/2023](#progress-1)
+
+### Progress 3
+5/19/2023
+
+Restarted on the JS for the planned income section. It works on mobile now! Only issue on mobile is it will display the $ next to the input if the return key is hit but not is the done key is hit. 
+
+I could only get the amount entered to show if my input type is text. If I use input type number it won't show the amount input by the user. Not sure why but will look into it. 
+
+Some of the JS is new to me so I will take some time to review and practice it. The localStorage I need to practice working with more. The blur() method is new for me but it fixed the issue of the input expecting more user input after hitting the enter key. 
 
 ### Progress 2 
 5/17/2023
