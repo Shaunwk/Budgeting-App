@@ -22,6 +22,8 @@ Some of the JS is new to me so I will take some time to review and practice it. 
 Added commas to all numbers above 1,000 automatically using "const formattedNumber = parseFloat(text).toLocaleString();
   plannedAmount.value = `$${formattedNumber}`;"
 
+Added a clearLocalStorage()
+
 ### Progress 2 
 5/17/2023
 
