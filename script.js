@@ -63,7 +63,7 @@ if (storedValue) {
 
 // Add event listener for the Enter key press
 plannedAmount.addEventListener('keydown', function(event) {
-  if (event.key === 'Enter' || 'Done') {
+  if (event.key === 'Enter') {
     const userInput = plannedAmount.value;
     if (!isNaN(userInput)) {
       displayText(userInput);
