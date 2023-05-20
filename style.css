@@ -139,7 +139,7 @@ main {
 
 /* 2. Income box */
 #income-progress {
-    width: 30%;
+    width: 5%;
     /* width will be adjusted with JS to match running total */
     height: .9rem;
     background-color: #2fda00;

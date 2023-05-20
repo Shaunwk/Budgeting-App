@@ -15,8 +15,11 @@ toggle.addEventListener('click', function (){
 
 
 
-// User date input
+// User input date
 const date = document.getElementById('date');
+
+// Prevent the dropdown showing previous entries as suggestions
+date.setAttribute('autocomplete', 'off'); 
 
 // Retrieve the stored value from localStorage on page load
 const storedDate = localStorage.getItem('entered-date');
@@ -42,6 +45,11 @@ date.addEventListener('keydown', function(hitEnter){
 //User input Planned Income
 const plannedAmount = document.getElementById('planned-amount-input');
 
+// Prevent the dropdown showing previous entries as suggestions
+plannedAmount.setAttribute('autocomplete', 'off');
+
+//parseFloat(text) converts the input 'text' into a floating-point number so it is treated as a number instead of a string
+//toLocaleString converts the parsed number into a localized string representation. This function ensures that the number is formatted according to the user's locale, including the appropriate decimal seperator.
 function displayText(text) {
   const formattedNumber = parseFloat(text).toLocaleString();
   plannedAmount.value = `$${formattedNumber}`;
@@ -70,4 +78,23 @@ plannedAmount.addEventListener('keydown', function(event) {
 });
 
 
+
+
+// User Input Income
+const incomeTitle = document.getElementById('income-title-input');
+const incomeAmount = document.getElementById('income-amount-input');
+
+incomeTitle.setAttribute('autocomplete', 'off');
+incomeAmount.setAttribute('autocomplete', 'off');
+
+
+
+
+
+
+// Clear local storage and refresh the page
+function clearLocalStorage() {
+  localStorage.clear();
+  location.reload();
+}
 
