@@ -8,8 +8,9 @@
 .d-flex {
     display: flex;
     align-items: center;
+    gap: 1rem;
     justify-content: space-between; 
-    /* flex-wrap: wrap; */
+    
 }
 
 .box {
@@ -23,6 +24,7 @@
 .box-title {
     font-size: 1.25rem;
     font-weight: 600;
+    width: 100%;
 }
 
 .progress-bars-outline {
@@ -132,7 +134,7 @@ main {
 #planned-amount-input {
     font-size: 1.625rem;
     font-weight: 600;
-    width:35%;
+    width:100%;
 }
 
 /* 2. Income box */
