@@ -6,9 +6,16 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-1. [Progress 5/19/2023](#progress-3)
-2. [Progress 5/17/2023](#progress-2) 
-3. [Progress 5/16/2023](#progress-1)
+1. [Progress 5/20/2023](#progress-4)
+2. [Progress 5/19/2023](#progress-3)
+3. [Progress 5/17/2023](#progress-2) 
+4. [Progress 5/16/2023](#progress-1)
+
+### Progress 4
+5/20/2023
+
+Working on the Income section where users can add their income and it is displayed in a list. This has been difficult to get right. I am almost there and have had a lot of help from chatGPT. This section has been much more difficult than the previous sections so Iit will take a little longer to figure out and understand the JS code I got generated in chatGPT. 
+
 
 ### Progress 3
 5/19/2023

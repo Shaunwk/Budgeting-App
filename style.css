@@ -157,7 +157,20 @@ main {
 
 #income-list {
     background-color: var(--very-light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+
+#income-list, li {
+    width:100%;
+}
+.show-income-input {
+    display: block;
+    width: 100%;
+}
+
 
 
 /* 3. Savings Goal box */

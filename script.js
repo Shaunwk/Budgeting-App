@@ -87,6 +87,86 @@ const incomeAmount = document.getElementById('income-amount-input');
 incomeTitle.setAttribute('autocomplete', 'off');
 incomeAmount.setAttribute('autocomplete', 'off');
 
+incomeTitle.addEventListener('keydown', function(event){
+  if(event.key === 'Enter'){
+    incomeTitle.blur();
+  }
+})
+
+function displayIncome(input){
+  const formattedAmount = parseFloat(input).toLocaleString();
+  incomeAmount.value = `$${formattedAmount}`;
+}
+
+incomeAmount.addEventListener('keydown', function(event){
+  if(event.key === 'Enter'){
+    const amountInput = incomeAmount.value;
+    
+    if(!isNaN(amountInput)){
+      displayIncome(amountInput);
+    } else {
+      alert('Invalid input. Please enter a number.')
+    }
+    incomeAmount.blur();
+  }
+})
+
+//Add user income input and save it in a div in local storage when the button is clicked
+const incomeList = document.getElementById('income-list');
+const incomeAddButton = document.getElementById('income-add-button');
+
+// Retrieve the stored income inputs from localStorage on page load
+const storedIncomeInputs = localStorage.getItem('income-input');
+if (storedIncomeInputs) {
+  // Parse the stored inputs as JSON and convert them to an array of objects
+  const incomeInputs = JSON.parse(storedIncomeInputs);
+
+  // Create a list item for each input and append it to the income list
+  incomeInputs.forEach(incomeInput => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${incomeInput.title} ${incomeInput.amount}`;
+    incomeList.appendChild(listItem);
+  });
+}
+
+incomeAddButton.addEventListener('click', function () {
+  const addedIncomeTitle = incomeTitle.value;
+  const addedIncomeAmount = incomeAmount.value;
+
+  if (!addedIncomeTitle || !addedIncomeAmount) {
+    alert('Please enter both a title and an amount.');
+    return;
+  }
+
+  const addedIncomeInput = {
+    title: addedIncomeTitle,
+    amount: addedIncomeAmount
+  };
+
+  // Retrieve existing income inputs from localStorage
+  const storedIncomeInputs = localStorage.getItem('income-input');
+
+  let incomeInputs = [];
+  if (storedIncomeInputs) {
+    // Parse the stored inputs as JSON and convert them to an array of objects
+    incomeInputs = JSON.parse(storedIncomeInputs);
+  }
+
+  // Add the new input to the array of income inputs
+  incomeInputs.push(addedIncomeInput);
+
+  // Update localStorage with the updated inputs
+  localStorage.setItem('income-input', JSON.stringify(incomeInputs));
+
+  // Create a new list item for the new input and append it to the income list
+  const listItem = document.createElement('li');
+  listItem.textContent = `${addedIncomeTitle} ${addedIncomeAmount}`;
+  incomeList.appendChild(listItem);
+
+  // Clear the add income fields
+  incomeTitle.value = '';
+  incomeAmount.value = '';
+});
 
 
 
