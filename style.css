@@ -47,19 +47,22 @@ ul {
 
 
 /* navigation */
-nav {
+.toggle {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-top: .5rem;
     background-color: var(--dark-grey);
 }
 
-.material-symbols-outlined {
-    color: #fff;
-    border-radius: 4px;
+.toggle-hamburger-icon {
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
 }
 
-.toggle {
-    display: flex;
+.toggle-close-icon {
+    display: none;
 }
 
 a {
@@ -92,12 +95,17 @@ a:hover {
 }
 
 .icon-open {
-    color: #000;
+    display: none;
 }
 
-.toggle-open {
+.toggle-close-icon-visible {
+    display:block;
+}
+
+.toggle-open-style-change {
     background-color: #fff;
 }
+
 
 /* header section */
 header {
@@ -176,3 +184,6 @@ main {
 /* 3. Savings Goal box */
 
 /* 4. Savings Box */
+
+
+/* Practice section */

@@ -1,13 +1,15 @@
 // Toggle menu to show and hide links
 const toggle = document.querySelector('.toggle');
 const linksList = document.querySelector('.links-list');
-const toggleIcon = document.querySelector('.material-symbols-outlined');
+const toggleIcon = document.querySelector('.toggle-hamburger-icon');
+const toggleIconClose = document.querySelector('.toggle-close-icon');
 
 
 toggle.addEventListener('click', function (){
   linksList.classList.toggle('links-open');
   toggleIcon.classList.toggle('icon-open');
-  toggle.classList.toggle('toggle-open');
+  toggle.classList.toggle('toggle-open-style-change');
+  toggleIconClose.classList.toggle('toggle-close-icon-visible');
 });
 
 
@@ -178,3 +180,21 @@ function clearLocalStorage() {
   location.reload();
 }
 
+
+
+
+
+//Practice toggle
+
+
+
+
+//Practice input for user like the date
+
+
+
+//practice input for user like the planned income
+
+
+
+//practice the add income part

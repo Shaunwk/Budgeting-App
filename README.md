@@ -6,10 +6,17 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-1. [Progress 5/20/2023](#progress-4)
-2. [Progress 5/19/2023](#progress-3)
-3. [Progress 5/17/2023](#progress-2) 
-4. [Progress 5/16/2023](#progress-1)
+1. [Progress 5/22/2023](#progress-5)
+2. [Progress 5/20/2023](#progress-4)
+3. [Progress 5/19/2023](#progress-3)
+4. [Progress 5/17/2023](#progress-2) 
+5. [Progress 5/16/2023](#progress-1)
+ 
+### Progress 5
+5/22/2023
+
+Practiced my toggle JavaScript and in the process decided to redo my main toggle (navigation section) and implement a close (X) icon so it is a little more user friendly on the UX aspect. I also switched out the hamburger icon with a new one. I feel more confident in my toggle JavaScript now. addEventListener with a 'click' and a function that has the classList.toggle() is what I feel more confident coding. 
+
 
 ### Progress 4
 5/20/2023
