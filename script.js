@@ -30,7 +30,7 @@ if (storedDate) {
 }
 
 //Event listener for hitting enter key
-date.addEventListener('keydown', function(hitEnter){
+date.addEventListener('keyup', function(hitEnter){
  if(hitEnter.key === 'Enter'){
    
    // Store the value in localStorage
@@ -64,7 +64,7 @@ if (storedValue) {
 }
 
 // Add event listener for the Enter key press
-plannedAmount.addEventListener('keydown', function(event) {
+plannedAmount.addEventListener('keyup', function(event) {
   if (event.key === 'Enter') {
     const userInput = plannedAmount.value;
     if (!isNaN(userInput)) {
@@ -89,7 +89,7 @@ const incomeAmount = document.getElementById('income-amount-input');
 incomeTitle.setAttribute('autocomplete', 'off');
 incomeAmount.setAttribute('autocomplete', 'off');
 
-incomeTitle.addEventListener('keydown', function(event){
+incomeTitle.addEventListener('keyup', function(event){
   if(event.key === 'Enter'){
     incomeTitle.blur();
   }
@@ -100,7 +100,7 @@ function displayIncome(input){
   incomeAmount.value = `$${formattedAmount}`;
 }
 
-incomeAmount.addEventListener('keydown', function(event){
+incomeAmount.addEventListener('keyup', function(event){
   if(event.key === 'Enter'){
     const amountInput = incomeAmount.value;
     

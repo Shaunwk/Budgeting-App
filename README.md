@@ -6,12 +6,18 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-1. [Progress 5/22/2023](#progress-5)
-2. [Progress 5/20/2023](#progress-4)
-3. [Progress 5/19/2023](#progress-3)
-4. [Progress 5/17/2023](#progress-2) 
-5. [Progress 5/16/2023](#progress-1)
+1. [Progress 5/23/2023](#progress-6)
+2. [Progress 5/22/2023](#progress-5)
+3. [Progress 5/20/2023](#progress-4)
+4. [Progress 5/19/2023](#progress-3)
+5. [Progress 5/17/2023](#progress-2) 
+6. [Progress 5/16/2023](#progress-1)
  
+### Progress 6
+5/23/2023
+
+Simple change in JS to have keyup instead of keydown inside the eventListeners. Other than that I just practiced the toggle again and the date input field JS code. I want to really understand it and practice it over and over. I am getting much more confident everyday I practice. 
+
 ### Progress 5
 5/22/2023
 
