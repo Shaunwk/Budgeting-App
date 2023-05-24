@@ -6,13 +6,19 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
-1. [Progress 5/23/2023](#progress-6)
-2. [Progress 5/22/2023](#progress-5)
-3. [Progress 5/20/2023](#progress-4)
-4. [Progress 5/19/2023](#progress-3)
-5. [Progress 5/17/2023](#progress-2) 
-6. [Progress 5/16/2023](#progress-1)
+[Progress 5/24/2023](#progress-7)
+[Progress 5/23/2023](#progress-6)
+[Progress 5/22/2023](#progress-5)
+[Progress 5/20/2023](#progress-4)
+[Progress 5/19/2023](#progress-3)
+[Progress 5/17/2023](#progress-2) 
+[Progress 5/16/2023](#progress-1)
  
+### Progress 7
+5/24/2023
+
+In HTML I added a div with the $ in front of the Planned Income and Savings Goal inputs so it shows a dollar sign and people know to just type the number. I am trying to set it up so the diplayed amount is showing the commas using toLocaleString(). Because of this I have my HTML <input> type set to text not number. I added the Savings Goal section with the same setup as Planned Income. I am still trying to really understand these sections. Once I get more familiar with parseFloat(text).toLocaleString() I will be able to move on. 
+
 ### Progress 6
 5/23/2023
 

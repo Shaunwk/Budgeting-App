@@ -54,7 +54,7 @@ plannedAmount.setAttribute('autocomplete', 'off');
 //toLocaleString converts the parsed number into a localized string representation. This function ensures that the number is formatted according to the user's locale, including the appropriate decimal seperator.
 function displayText(text) {
   const formattedNumber = parseFloat(text).toLocaleString();
-  plannedAmount.value = `$${formattedNumber}`;
+  plannedAmount.value = formattedNumber;
 }
 
 // Retrieve the stored value from localStorage on page load
@@ -172,6 +172,44 @@ incomeAddButton.addEventListener('click', function () {
 
 
 
+//User Input Savings Goal
+const savingsGoalInput = document.getElementById('savings-goal-input');
+
+savingsGoalInput.setAttribute('autocomplete', 'off');
+
+function displaySavings(text) {
+  const formattedSavings = parseFloat(text).toLocaleString();
+  savingsGoalInput.value = formattedSavings;
+}
+
+const getSavingsGoal = localStorage.getItem('savingsGoal');
+if (getSavingsGoal) {
+  displaySavings(getSavingsGoal);
+}
+
+savingsGoalInput.addEventListener('keyup', function (confirmed) {
+  if (confirmed.key === 'Enter') {
+    const savingsGoal = savingsGoalInput.value;
+
+    if (!isNaN(savingsGoal)) {
+            displaySavings(savingsGoal);
+
+    localStorage.setItem('savingsGoal', savingsGoal);
+    } else {
+      alert('Invalid input. Please enter a number.');
+    }
+    
+    savingsGoalInput.blur();
+  }
+});
+
+
+  
+console.log(localStorage)
+
+
+
+
 
 
 // Clear local storage and refresh the page
@@ -184,17 +222,3 @@ function clearLocalStorage() {
 
 
 
-//Practice toggle
-
-
-
-
-//Practice input for user like the date
-
-
-
-//practice input for user like the planned income
-
-
-
-//practice the add income part
