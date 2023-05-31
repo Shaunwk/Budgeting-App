@@ -6,6 +6,7 @@ Built by Shaun William Kelly
 ShaunWilliamKelly@gmail.com
 
 # Progress
+[Progress 5/30/2023](#progress-8)
 [Progress 5/24/2023](#progress-7)
 [Progress 5/23/2023](#progress-6)
 [Progress 5/22/2023](#progress-5)
@@ -13,6 +14,11 @@ ShaunWilliamKelly@gmail.com
 [Progress 5/19/2023](#progress-3)
 [Progress 5/17/2023](#progress-2) 
 [Progress 5/16/2023](#progress-1)
+ 
+### Progress 8
+5/30/2023
+
+I was out of town for a few days so I just got a little JS practice in. I will refesh and keep pushing forward. 
  
 ### Progress 7
 5/24/2023
