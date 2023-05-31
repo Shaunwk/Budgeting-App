@@ -82,6 +82,48 @@ plannedAmount.addEventListener('keyup', function(event) {
 
 
 
+
+//User Input Savings Goal
+const savingsGoalInput = document.getElementById('savings-goal-input');
+
+savingsGoalInput.setAttribute('autocomplete', 'off');
+
+function displaySavings(text) {
+  const formattedSavings = parseFloat(text).toLocaleString();
+  savingsGoalInput.value = formattedSavings;
+}
+
+const getSavingsGoal = localStorage.getItem('savingsGoal');
+if (getSavingsGoal) {
+  displaySavings(getSavingsGoal);
+}
+
+savingsGoalInput.addEventListener('keyup', function (confirmed) {
+  if (confirmed.key === 'Enter') {
+    const savingsGoal = savingsGoalInput.value;
+
+    if (!isNaN(savingsGoal)) {
+            displaySavings(savingsGoal);
+
+    localStorage.setItem('savingsGoal', savingsGoal);
+    } else {
+      alert('Invalid input. Please enter a number.');
+    }
+    
+    savingsGoalInput.blur();
+  }
+});
+
+// Savings goal % of planned Income
+
+
+
+
+
+
+
+
+
 // User Input Income
 const incomeTitle = document.getElementById('income-title-input');
 const incomeAmount = document.getElementById('income-amount-input');
@@ -172,36 +214,7 @@ incomeAddButton.addEventListener('click', function () {
 
 
 
-//User Input Savings Goal
-const savingsGoalInput = document.getElementById('savings-goal-input');
 
-savingsGoalInput.setAttribute('autocomplete', 'off');
-
-function displaySavings(text) {
-  const formattedSavings = parseFloat(text).toLocaleString();
-  savingsGoalInput.value = formattedSavings;
-}
-
-const getSavingsGoal = localStorage.getItem('savingsGoal');
-if (getSavingsGoal) {
-  displaySavings(getSavingsGoal);
-}
-
-savingsGoalInput.addEventListener('keyup', function (confirmed) {
-  if (confirmed.key === 'Enter') {
-    const savingsGoal = savingsGoalInput.value;
-
-    if (!isNaN(savingsGoal)) {
-            displaySavings(savingsGoal);
-
-    localStorage.setItem('savingsGoal', savingsGoal);
-    } else {
-      alert('Invalid input. Please enter a number.');
-    }
-    
-    savingsGoalInput.blur();
-  }
-});
 
 
   

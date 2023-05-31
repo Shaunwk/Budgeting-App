@@ -25,12 +25,23 @@
     font-size: 1.25rem;
     font-weight: 600;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .progress-bars-outline {
-    width: 50%;
-    height: 1rem;
+    width: 100%;
+    height: 1.01rem;
     border: 1px solid black;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+
+}
+
+.progress {
+    font-size: 0.5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 input {
@@ -142,6 +153,14 @@ header {
     font-size: 1.625rem;
     font-weight: 600;
     width:.2rem;
+    padding-bottom: 1rem;
+}
+
+.line-break {
+    height:2px;
+    width: 100%;
+    background-color: #000;
+    margin-bottom: 1rem;
 }
 
 /* 1. Planned income box */
@@ -149,6 +168,7 @@ header {
     font-size: 1.625rem;
     font-weight: 600;
     width:100%;
+    padding-bottom: 1rem;
 }
 
 /* 2. Income box */

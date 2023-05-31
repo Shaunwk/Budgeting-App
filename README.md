@@ -19,6 +19,8 @@ ShaunWilliamKelly@gmail.com
 5/30/2023
 
 I was out of town for a few days so I just got a little JS practice in. I will refesh and keep pushing forward. 
+
+I did some HTML clean up and am trying out a new layout where the planned income and income box are combined and the sections are just seperated by the progress bar. 
  
 ### Progress 7
 5/24/2023

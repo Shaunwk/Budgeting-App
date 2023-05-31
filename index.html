@@ -27,8 +27,7 @@
 </head>
 
 <body>
-    <!--add toggle for links on top left when in mobile size
-             have a stationary bar with icons for desktop on left side -->
+    <!-- Navigation/toggle -->
     <nav class="navigation">
         <div class="toggle">
             <img class="toggle-hamburger-icon" src="images/Hamburger_icon_white.svg" alt="toggle">
@@ -43,8 +42,7 @@
     </nav>
 
     <header>
-        <!-- Have pencil so you can enter the month and year
-            this might stays at the top even on scroll so not too big -->
+        <!-- Date -->
         <div class="date-box">
             <input type="text" id="date" name="date" placeholder="Month/Year">
         </div>
@@ -58,12 +56,13 @@
                 <div class="dollar-sign">$</div>
                     <input type="text" id="planned-amount-input" class="input-placeholder" name="amount"  placeholder="0">
             </div>
-        </div>
-        <!-- 2. Income Progress box -->
-        <div class="box">
-            <div class="d-flex">
-                <h3 class="box-title">Income</h3>
+
+            <!-- <div class="line-break"></div> -->
+
+           <div class="d-flex">
+                <!-- <h3 class="box-title">Income</h3> -->
                 <div class="progress-bars-outline">
+                    <h2 class="progress">Progress</h2>
                     <div id="income-progress"></div>
                 </div>
             </div>
@@ -75,7 +74,6 @@
             <div class="d-flex">
                 <input type="text" id="income-title-input" name="title" placeholder="add income">
                 <input type="text" id="income-amount-input" name="amount" placeholder="$0">
-                <!-- <img id="income-add-button" src="images/add_FILL0_wght400_GRAD0_opsz48.svg" alt="add icon"> -->
                 <button id="income-add-button"><b>+</b></button>
             </div>
 
@@ -84,14 +82,12 @@
                 <div id="income-amount-total">
                     Total: $0.00
                 </div>
-            </div>
+            </div> 
         </div>
 
-        
-
-        <!-- Savings goal - user types in $ and it also displays 
+<!-- Savings goal - user types in $ and it also displays 
             a % based on planned income so they can see their savings rate-->
-        <!-- 3. Savings Goal box -->
+        <!-- 2. Savings Goal box -->
         <div class="box">
             <div class="d-flex">
                 <h2 class="box-title">Savings Goal</h2>
@@ -102,6 +98,12 @@
 
         
         <!-- savings entries with progress bar and a running total-->
+
+      
+
+        
+
+        
 
         <!-- Deductions - seperate into several catergories like 
                  housing, utilities, misc, insurance, debt...-->
